@@ -6,14 +6,8 @@
 
 // // Header Section
 
-// // Language Toggle Button
-// // Top right corner ("EN | PT")
-// const popover = document.getElementById('mypopover');
+// Language Toggle Button
 
-// popover.addEventListener('toggle', () => {
-
-// });
-// ontoggle = () => {};
 
 // // Key Interactive Buttons
 
