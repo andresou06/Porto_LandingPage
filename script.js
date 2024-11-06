@@ -74,15 +74,3 @@ closeButton3.addEventListener('click', () => {
 // Project
 const Project = document.getElementById('slider');
 
-fetch(Project) 
-  .then(response => response.json())
-  .then(data => {
-    data.forEaach(function(image, i) {
-      document.querySelector("#slide-" + (i+1)).innerHTML = `
-        <img src="${image.urls.regular}" alt="">
-        <p class="author-info">
-          <a href="${image.links.html}?utm_source=slider-thing&utm_medium=referral&utm_campaign=api-credit">Photo by ${image.user.name}</a>
-        </p>
-      `;
-    });
-  });
