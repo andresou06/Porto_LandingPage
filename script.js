@@ -8,66 +8,81 @@
 
 // Language Toggle Button
 
+const toggleLanguage = document.getElementById('toggle');
 
-// // Key Interactive Buttons
+toggleLanguage.addEventListener('click', () => {
+        open("./porto.html");
+});
 
 // // ###########################################################
-// // Contact Me Button
-// const contactMe = document.getElementById('contact');
+// Contact Me Button
+const contactMe = document.getElementById('contact');
 
-// contactMe.addEventListener('click', () => {
-//         open("./contactPage.html")
-// });
-
-// // ###############################################################
-// // Dowload Resume button
-
-// // First giving Permsision 
-
-// // Setting download API 
-
-// // Getting the HTML to PDF conversion 
-// // const button_download = document.getElementById('download');
-// // // let downloading = browser.downloads.download(
-// // //     Option
-// // // )
-
-// // button_download.addEventListener('click', () => {
-// //            open("./resume.html") 
-// // });
+contactMe.addEventListener('click', () => {
+        open("./contactPage.html")
+});
 
 // We will us  POPOVER API to render each button
 // #############################################
 // Goal button 
 
 // // #######################################################################
-// // Availability Calendar
-// const button_calendar = document.getElementById('calendar');
-// // Making Own custom calendar for a visible clear indications
-// // Very low logic use of js for this one.
-// button_calendar.addEventListener('click', () => {
-// //    Trigger My calendar to appear and show my availabilty
-// });
+// Availability Calendar
+const button_goal = document.getElementById('goal');
+const button_calendar = document.getElementById('calendar');
+const button_project = document.getElementById('projects');
 
-// // ###########################################################
-// // Projects BUTTON 
-// // It would show Images that are screenshot of each 
-// // main page of different projects
+const dialog1 = document.getElementById('my-popover');
+const dialog2 = document.getElementById('my-popover2');
+const dialog3 = document.getElementById('my-popover3');
+
+const closeButton1 = document.getElementById('1');
+const closeButton2 = document.getElementById('2')
+
+const closeButton3 = document.getElementById('3')
 
 
+// ###########################################################
 
-// // #########################################################
-// // Language Skills progress button
-// // Icon/Bars 
+button_goal.addEventListener('click', () => {
+    dialog1.showModal();
+});
 
+closeButton1.addEventListener('click', () => {
+    dialog1.close();
+});
+
+// #############################################################
+button_calendar.addEventListener('click', () => {
+    dialog2.showModal();
+});
+
+closeButton2.addEventListener('click', () => {
+        dialog2.close();
+});
+// ######
 // // ##########################################################
-// // Social Media / Linkdin 
-// // Just simple link html a tag
+button_project.addEventListener('click', () => {
+        dialog3.showModal();
+});
 
-// // ############################################################
-
-
-
-// // ##########################################################
+closeButton3.addEventListener('click', () => {
+        dialog3.close();
+});
 // // Skill transferable 
 // // Displaying minifying picture that point out to symbolic Skills
+// Project
+const Project = document.getElementById('slider');
+
+fetch(Project) 
+  .then(response => response.json())
+  .then(data => {
+    data.forEaach(function(image, i) {
+      document.querySelector("#slide-" + (i+1)).innerHTML = `
+        <img src="${image.urls.regular}" alt="">
+        <p class="author-info">
+          <a href="${image.links.html}?utm_source=slider-thing&utm_medium=referral&utm_campaign=api-credit">Photo by ${image.user.name}</a>
+        </p>
+      `;
+    });
+  });
