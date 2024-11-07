@@ -36,10 +36,10 @@ const dialog1 = document.getElementById('my-popover');
 const dialog2 = document.getElementById('my-popover2');
 const dialog3 = document.getElementById('my-popover3');
 
-const closeButton1 = document.getElementById('1');
-const closeButton2 = document.getElementById('2')
+const closeButton1 = document.getElementById('one');
+const closeButton2 = document.getElementById('two')
 
-const closeButton3 = document.getElementById('3')
+const closeButton3 = document.getElementById('three')
 
 
 // ###########################################################

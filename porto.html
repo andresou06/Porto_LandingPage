@@ -22,7 +22,7 @@
 
         <span class="englobe">
             
-            <button id="toggle" class="thumbnails" >EN | PT </button><strong style="color: rgb(244, 206, 196);">🔄:Translate</strong><br>
+            <button id="toggle" class="thumbnails" >EN | PT </button><strong style="color: rgb(244, 206, 196);"><br>🔄:Traduzir</strong><br>
 
        <button id="contact" class="thumbnails">Contacte-Me</button>
         
@@ -53,29 +53,85 @@
     </div>
 
 <div class="thirdRow">
-<button class="thumbnails"><strong>Objetivo</strong></button>
-<button class="thumbnails"><strong>Disponibilidade</strong></button>
-<button class="thumbnails"><strong>Projeto</strong></button>
+<button class="thumbnails" id="goal" popovertarget="my-popover"><strong>Objetivo</strong></button>
+<button  class="thumbnails" id="calendar" popovertarget="my-popover2"><strong>Disponibilidade</strong></button>
+<button class="thumbnails" id="projects" popovertarget="my-popover3"><strong>Projeto</strong></button>
 </div>
+
+<dialog popover id="my-popover"> <button id="one" autofocus>Close</button>
+    <h2>Goal of this year:</h2>
+        <div class="project chakra-petch-bold thumbnails">
+        <ul class="box1">
+        <li><h3>Contributing to the team while refining my development skills. 💻</h3></li>
+        <li><h3>Improve Portuguese in a professionial rich-environnement.🗣️</h3></li>
+        <li><h3>Maintain a balanced approach to work and life, ensuring prioritization and commitment. ♻️</h3></li>
+    </ul>
+</div>
+</dialog>
+
+<dialog popover id="my-popover2"> <button id="two" autofocus>Close</button><h2>Available for work from January: 2025</h2> <br> 
+<div class="available">
+    <span>
+<p id="same" style="background-color: rgb(235, 107, 107, 0.4);">November❌</p>
+<p id="same" style="background-color: rgb(235, 107, 107, 0.4);">December❌</p>
+<p id="same" style="background-color: rgb(63, 188, 63,0.3);">January✅</p>
+</span>
+<span>
+<p id="same" style="background-color: rgb(63, 188, 63,0.3);">February✅</p>
+<p id="same" style="background-color: rgb(63, 188, 63,0.3);">March✅</p>
+<p id="same" style="background-color: rgb(63, 188, 63,0.3);">April✅</p> <br>
+</span>
+<span>
+<p id="same" style="background-color: rgb(63, 188, 63,0.3);">May✅</p>
+<p id="same" style="background-color: rgb(63, 188, 63,0.3);">June✅</p>
+<p id="same" style="background-color: rgb(63, 188, 63,0.3);">July✅</p>
+<p id="same" style="background-color: rgb(63, 188, 63,0.3);">August✅</p>
+</span>
+<span>
+<p id="same" style="background-color: rgb(63, 188, 63,0.3);">Septembre✅</p>
+<p id="same" style="background-color: rgb(63, 188, 63,0.3);">October✅</p>
+<p id="same" style="background-color: rgb(63, 188, 63,0.3);">November✅</p>
+<p id="same" style="background-color: rgb(63, 188, 63,0.3);">December✅</p>
+
+</span>
+</div>
+
+</dialog>
+
+
+
+<dialog popover id="my-popover3"><button id="three" autofocus>Close</button> <h2>Project</h2>
+<div id="slider" class="slider">
+
+    <!-- <img src="./Image/communication.png">1</a>
+    <img src="./Image/adaptation.png">2</a>
+    <img src="./Image/knowledge-transfer.png">3</a>
+    <img src="Image/learning.png">4</a>
+    <img src="./Image/time-management.png">5</a>
+   -->
+
+</dialog>
+
+
 
 <div class="fourthRow" >
 
    
-    <h2 style="padding: 3;">Competências: </h2>
+ 
    <span class="space_img">
-    <img class="cercle" src="./Image/adaptation.png" alt="img2"><strong>Adaptabilidade</strong>
-    <img class="cercle" src="./Image/communication.png" alt="img3"><strong>Comunicação</strong>
+    <img class="cercle" src="./Image/adaptation.png" alt="img2"><br>Adaptabilidade
+    <img class="cercle" src="./Image/communication.png" alt="img3"><br>Comunicação
 </span>
 <span class="space_img">
-    <img class="cercle" src="./Image/problem-solving-skills.png" alt="img4"><strong>Resolução de problemas</strong>
-    <img class="cercle" src="./Image/search.png" alt="img5"><strong>Atenção aos detalhes</strong>
+    <img class="cercle" src="./Image/problem-solving-skills.png" alt="img4"><br>Resolução de problemas
+    <img class="cercle" src="./Image/search.png" alt="img5"><br>Atenção aos detalhes
 </span>
     <span class="space_img">
-    <img class="cercle" src="./Image/time-management.png" alt="img6"><strong>Gestão de tempo</strong>
-    <img class="cercle" src="./Image/knowledge-transfer.png" alt="img7"><strong>Competências transferíveis</strong>
+    <img class="cercle" src="./Image/time-management.png" alt="img6"><br>Gestão de tempo
+    <img class="cercle" src="./Image/knowledge-transfer.png" alt="img7"><br>Competências transferíveis
 </span>
     <hr>
-        <ul style="margin: 1em;"><h2 style="padding: 3;">Proficiência na língua:</h2>
+        <ul style="margin: 3em;">
             <li><label for="file">FR: <img id="FR" src="./Image/france.png" alt="fr"></label>
 
                 <progress id="file" max="100" value="100">100%</progress>
