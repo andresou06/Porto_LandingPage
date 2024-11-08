@@ -14,7 +14,7 @@ const label = Element.accessKeyLabel;
 // CreateElement
 // insertAdjacentElement('afterend') ?
 btnsend.addEventListener('click', () => {
-     const feedback = document.createElement('output');
+     const feedback = document.createElement('p');
      feedback.textContent = "Message sent!"
      btnsend.insertAdjacentElement("afterend", feedback);
 })

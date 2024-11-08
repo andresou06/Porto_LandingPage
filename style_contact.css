@@ -95,3 +95,22 @@ body {
    border: solid black 1px;
 
 }
+
+/* tooltip part */
+[role="tooltip"] {
+  visibility: hidden;
+  position: absolute;
+  
+  left: 2rem;
+  background: black;
+  color: white;
+    padding: 1px;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 4%;
+  z-index: 10;
+}
+[aria-describedby]:hover ~ [role="tooltip"],
+[aria-describedby]:focus ~ [role="tooltip"]  {
+  visibility: visible;
+}

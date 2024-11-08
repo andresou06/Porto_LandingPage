@@ -69,8 +69,17 @@ button_project.addEventListener('click', () => {
 closeButton3.addEventListener('click', () => {
         dialog3.close();
 });
-// // Skill transferable 
-// // Displaying minifying picture that point out to symbolic Skills
-// Project
-const Project = document.getElementById('slider');
 
+// ###################################################
+
+// HTMLElement.title
+
+// The tooltip is displayed and disappears via keyboard focus and removal of focus and by the mouse events - mousing over and mousing out.
+
+// The tooltip never receives focus. Focus stays on the owning element.
+
+// The tooltip can be hidden with the Escape key
+
+// The tooltip stays open when hovered
+
+// The tooltip is only hidden via JavaScript and CSS selectors. If JavaScript is not available the tooltip is shown.
